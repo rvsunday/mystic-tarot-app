@@ -1,3 +1,4 @@
+import os
 import flet as ft
 import random
 import asyncio
@@ -482,4 +483,10 @@ def main(page: ft.Page):
     page.title = "Mystic Tarot"
     page.add(ft.Text("Welcome to Mystic Tarot"))
 
-ft.run(main, port=8000)
+port = int(os.environ.get("PORT", 8000))
+
+ft.run(
+    main,
+    host="0.0.0.0",
+    port=port
+)
