@@ -479,14 +479,4 @@ def main(page: ft.Page):
     ], expand=True))
 
 
-def main(page: ft.Page):
-    page.title = "Mystic Tarot"
-    page.add(ft.Text("Welcome to Mystic Tarot"))
-
-port = int(os.environ.get("PORT", 8000))
-
-ft.run(
-    main,
-    host="0.0.0.0",
-    port=port
-)
+ft.app(target=main)
