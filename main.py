@@ -478,4 +478,8 @@ def main(page: ft.Page):
     ], expand=True))
 
 
-ft.app(target=main)
+def main(page: ft.Page):
+    page.title = "Mystic Tarot"
+    page.add(ft.Text("Welcome to Mystic Tarot"))
+
+ft.run(main, port=8000)
