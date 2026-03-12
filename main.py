@@ -435,7 +435,7 @@ def main(page: ft.Page):
     # DRAW BUTTON
     # ════════════════════════════════════════
     draw_button = ft.ElevatedButton(
-        f"{SPREADS[0]['emoji']}  สุ่มไพ่ {SPREADS[0]['label']}",
+        f"{SPREADS[0]['emoji']}  สุ่มไพ่ ",
         width=240, height=54,
         style=ft.ButtonStyle(
             bgcolor="#4a1e8c",
